@@ -1,0 +1,24 @@
+while True:
+    def fibonacciseries(n):
+        if n==0:
+            return 0
+        elif (n==1):
+            return 1
+        else:
+            return fibonacciseries(n-1)+fibonacciseries(n-2)
+    n=int(input("enter a number:"))
+    print("the value is:")
+    print(fibonacciseries(n))
+ 
+    def goldenratio(n):
+        if n==0:
+            return 0
+        elif n==1:
+            return 1
+        elif n==2:
+            return "required_number>2"  
+        else:
+            return fibonacciseries(n-1)/fibonacciseries(n-2)
+    print("golden ratio is:")
+    print(goldenratio(n))
+    continue
